@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp">
+
+    <TextView
+        android:id="@+id/textViewItemNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_item_name"/>
+
+    <TextView
+        android:id="@+id/textViewItemPriceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_item_price"
+        android:layout_below="@+id/textViewItemNameLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textViewItemAmountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_item_amount_cart"
+        android:layout_below="@+id/textViewItemPriceLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---"
+        android:id="@+id/textViewProductName"
+        android:layout_toRightOf="@+id/textViewItemNameLabel"
+        android:layout_toEndOf="@+id/textViewItemNameLabel"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---"
+        android:id="@+id/textViewProductPrice"
+        android:layout_below="@id/textViewProductName"
+        android:layout_toRightOf="@id/textViewItemPriceLabel"
+        android:layout_toEndOf="@id/textViewItemPriceLabel"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---"
+        android:id="@+id/textViewProductAmount"
+        android:layout_below="@id/textViewProductPrice"
+        android:layout_toRightOf="@id/textViewItemAmountLabel"
+        android:layout_toEndOf="@id/textViewItemAmountLabel"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="@string/label_remove_from_cart"
+        android:id="@+id/buttonRemoveFromCart"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
